@@ -12,7 +12,6 @@ function PrintDeveloperbyMap() {
       console.log(employee);
     }
   });
-  
 }
 
 function PrintDeveloperbyForEach() {
@@ -24,8 +23,15 @@ function PrintDeveloperbyForEach() {
 }
 
 function addData() {
-  let NewEmployee = { id: 4, name: "Shrikrishna", age: "24", profession: "intern" };
+  let NewEmployee = {
+    id: 4,
+    name: "Shrikrishna",
+    age: "24",
+    profession: "intern",
+  };
+
   arr.push(NewEmployee);
+
   console.log(arr);
 }
 
@@ -33,16 +39,18 @@ function removeAdmin() {
   arr = arr.filter(function (employee) {
     return employee.profession !== "admin";
   });
+
   console.log(arr);
 }
-
 
 function concatenateArray() {
   let newArr = [
     { id: 5, name: "Meghana", age: "22", profession: "designer" },
     { id: 6, name: "Pratik", age: "23", profession: "manager" },
+    { id: 7, name: "Rahul", age: "21", profession: "tester" },
   ];
+
   let concatenatedArr = arr.concat(newArr);
+
   console.log(concatenatedArr);
-  //Write your code here, just console.log
 }
