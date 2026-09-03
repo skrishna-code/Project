@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 2px solid #222;
+}
+
+
+/* ==============================
+   MAIN CONTAINER
+================================= */
+
+.container {
+    padding: 60px 34px;
+    min-height: 100vh;
+}
+
+
+/* ==============================
+   HEADINGS
+================================= */
+
+h3 {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+}
+
+
+/* ==============================
+   FORM
+================================= */
+
+.form-container {
+    display: flex;
+    gap: 35px;
+    width: 100%;
+}
+
+
+/* ==============================
+   INPUT GROUP
+================================= */
+
+.input-container {
+    width: 32%;
+}
+
+
+/* ==============================
+   LABEL
+================================= */
+
+.input-container label {
+    display: block;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+
+/* ==============================
+   INPUT
+================================= */
+
+.input-container input {
+    width: 100%;
+    height: 35px;
+
+    background-color: black;
+    color: white;
+
+    border: 1px solid #777;
+    border-radius: 3px;
+
+    padding: 8px;
+
+    font-size: 12px;
+
+    outline: none;
+}
+
+
+/* ==============================
+   ADD USER BUTTON
+================================= */
+
+#addUserBtn {
+    margin-top: 23px;
+
+    width: 138px;
+    height: 36px;
+
+    background-color: white;
+    color: black;
+
+    border: none;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+#addUserBtn:hover {
+    background-color: #ddd;
+}
+
+
+/* ==============================
+   MESSAGE
+================================= */
+
+#message {
+    min-height: 16px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 14px;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: #00ff55;
+}
+
+
+/* ==============================
+   EMPLOYEE COUNT
+================================= */
+
+#employeeCount {
+    color: #777;
+
+    font-size: 13px;
+
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+
+
+/* ==============================
+   EMPLOYEE ROW
+================================= */
+
+.employee {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 14px;
+}
+
+
+/* ==============================
+   EMPLOYEE BOX
+================================= */
+
+.employee-info {
+    width: 624px;
+    min-height: 52px;
+
+    border: 1px solid #777;
+    border-radius: 7px;
+
+    padding: 0 14px;
+
+    display: flex;
+    align-items: center;
+
+    /* THIS CREATES SPACE */
+    gap: 20px;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+}
+
+
+/* ==============================
+   EMPLOYEE NUMBER
+================================= */
+
+.employee-info .number {
+    width: 25px;
+    flex-shrink: 0;
+}
+
+
+/* ==============================
+   EMPLOYEE NAME
+================================= */
+
+.employee-info .name {
+    width: 140px;
+    flex-shrink: 0;
+}
+
+
+/* ==============================
+   EMPLOYEE PROFESSION
+================================= */
+
+.employee-info .profession {
+    width: 180px;
+    flex-shrink: 0;
+}
+
+
+/* ==============================
+   EMPLOYEE AGE
+================================= */
+
+.employee-info .age {
+    width: 60px;
+    flex-shrink: 0;
+}
+
+
+/* ==============================
+   DELETE BUTTON
+================================= */
+
+.delete-btn {
+    margin-left: 30px;
+
+    width: 190px;
+    height: 52px;
+
+    background-color: white;
+    color: black;
+
+    border: none;
+    border-radius: 30px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #ddd;
+}
