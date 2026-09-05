@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="home-container">
+
+    <h1 class="quiz-title">Quiz Master</h1>
+
+
+    <!-- Home Page -->
+    <div class="quiz-container">
+
+        <div class="section" data-section="0">
+            General Knowledge
+        </div>
+
+        <div class="section" data-section="1">
+            Science
+        </div>
+
+        <div class="section" data-section="2">
+            History
+        </div>
+
+        <div class="section" data-section="3">
+            Geography
+        </div>
+
+    </div>
+</div>
+
+    <!-- Question Page -->
+    <div id="question-container">
+
+        <div id="question"></div>
+
+        <div id="options"></div>
+
+        <div id="feedback"></div>
+
+        <button id="next-button">
+            Next
+        </button>
+
+    </div>
+
+
+    <!-- Result Page -->
+    <div id="results-container">
+
+        <h2>Quiz Completed!</h2>
+
+        <p>
+            Your Final Score is:
+            <span id="score"></span>/10
+        </p>
+
+        <button id="home-btn">
+            Go To Home
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

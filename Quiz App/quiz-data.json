@@ -1,0 +1,308 @@
+{
+    "sections": [
+        {
+            "sectionTitle": "General Knowledge",
+            "questions": [
+                {
+                    "questionType": "mcq",
+                    "question": "What is the tallest mountain in the world?",
+                    "options": [
+                        "Mount Everest",
+                        "K2",
+                        "Kangchenjunga",
+                        "Lhotse"
+                    ],
+                    "answer": "Mount Everest"
+                },
+                {
+                    "questionType": "text",
+                    "question": "What is the capital of Italy?",
+                    "answer": "Rome"
+                },
+                {
+                    "questionType": "number",
+                    "question": "How many continents are there?",
+                    "answer": 7
+                },
+                {
+                    "questionType": "mcq",
+                    "question": "Which is the largest ocean in the world?",
+                    "options": [
+                        "Atlantic Ocean",
+                        "Indian Ocean",
+                        "Pacific Ocean",
+                        "Arctic Ocean"
+                    ],
+                    "answer": "Pacific Ocean"
+                },
+                {
+                    "questionType": "text",
+                    "question": "What is the capital of France?",
+                    "answer": "Paris"
+                },
+                {
+                    "questionType": "number",
+                    "question": "How many days are there in a week?",
+                    "answer": 7
+                },
+                {
+                    "questionType": "mcq",
+                    "question": "Which planet is known as the Red Planet?",
+                    "options": [
+                        "Earth",
+                        "Mars",
+                        "Jupiter",
+                        "Venus"
+                    ],
+                    "answer": "Mars"
+                },
+                {
+                    "questionType": "text",
+                    "question": "Who wrote the national anthem of India?",
+                    "answer": "Rabindranath Tagore"
+                },
+                {
+                    "questionType": "number",
+                    "question": "How many months are there in a year?",
+                    "answer": 12
+                },
+                {
+                    "questionType": "mcq",
+                    "question": "Which animal is known as the King of the Jungle?",
+                    "options": [
+                        "Tiger",
+                        "Elephant",
+                        "Lion",
+                        "Leopard"
+                    ],
+                    "answer": "Lion"
+                }
+            ]
+        },
+        {
+            "sectionTitle": "Science",
+            "questions": [
+                {
+                    "questionType": "mcq",
+                    "question": "What is H2O commonly known as?",
+                    "options": [
+                        "Oxygen",
+                        "Water",
+                        "Hydrogen",
+                        "Salt"
+                    ],
+                    "answer": "Water"
+                },
+                {
+                    "questionType": "text",
+                    "question": "What gas do humans need to breathe?",
+                    "answer": "Oxygen"
+                },
+                {
+                    "questionType": "number",
+                    "question": "How many bones are there in an adult human body?",
+                    "answer": 206
+                },
+                {
+                    "questionType": "mcq",
+                    "question": "Which planet is closest to the Sun?",
+                    "options": [
+                        "Earth",
+                        "Venus",
+                        "Mercury",
+                        "Mars"
+                    ],
+                    "answer": "Mercury"
+                },
+                {
+                    "questionType": "text",
+                    "question": "What is the process by which plants make their food?",
+                    "answer": "Photosynthesis"
+                },
+                {
+                    "questionType": "number",
+                    "question": "How many chambers does the human heart have?",
+                    "answer": 4
+                },
+                {
+                    "questionType": "mcq",
+                    "question": "Which organ pumps blood throughout the human body?",
+                    "options": [
+                        "Brain",
+                        "Lungs",
+                        "Heart",
+                        "Kidney"
+                    ],
+                    "answer": "Heart"
+                },
+                {
+                    "questionType": "text",
+                    "question": "What force pulls objects toward Earth?",
+                    "answer": "Gravity"
+                },
+                {
+                    "questionType": "number",
+                    "question": "How many planets are in the Solar System?",
+                    "answer": 8
+                },
+                {
+                    "questionType": "mcq",
+                    "question": "Which vitamin is mainly produced when skin is exposed to sunlight?",
+                    "options": [
+                        "Vitamin A",
+                        "Vitamin B",
+                        "Vitamin C",
+                        "Vitamin D"
+                    ],
+                    "answer": "Vitamin D"
+                }
+            ]
+        },
+        {
+            "sectionTitle": "Mathematics",
+            "questions": [
+                {
+                    "questionType": "number",
+                    "question": "What is 15 + 25?",
+                    "answer": 40
+                },
+                {
+                    "questionType": "number",
+                    "question": "What is 12 × 5?",
+                    "answer": 60
+                },
+                {
+                    "questionType": "mcq",
+                    "question": "What is the square root of 64?",
+                    "options": [
+                        "6",
+                        "7",
+                        "8",
+                        "9"
+                    ],
+                    "answer": "8"
+                },
+                {
+                    "questionType": "number",
+                    "question": "What is 100 ÷ 4?",
+                    "answer": 25
+                },
+                {
+                    "questionType": "text",
+                    "question": "What is the name of a triangle with three equal sides?",
+                    "answer": "Equilateral triangle"
+                },
+                {
+                    "questionType": "number",
+                    "question": "What is 9 × 9?",
+                    "answer": 81
+                },
+                {
+                    "questionType": "mcq",
+                    "question": "How many degrees are in a right angle?",
+                    "options": [
+                        "45",
+                        "90",
+                        "180",
+                        "360"
+                    ],
+                    "answer": "90"
+                },
+                {
+                    "questionType": "number",
+                    "question": "What is 250 - 75?",
+                    "answer": 175
+                },
+                {
+                    "questionType": "text",
+                    "question": "What is the value of pi approximately?",
+                    "answer": "3.14"
+                },
+                {
+                    "questionType": "number",
+                    "question": "What is 10% of 200?",
+                    "answer": 20
+                }
+            ]
+        },
+        {
+            "sectionTitle": "Indian History",
+            "questions": [
+                {
+                    "questionType": "mcq",
+                    "question": "Who was the first Prime Minister of India?",
+                    "options": [
+                        "Mahatma Gandhi",
+                        "Jawaharlal Nehru",
+                        "Sardar Patel",
+                        "Subhash Chandra Bose"
+                    ],
+                    "answer": "Jawaharlal Nehru"
+                },
+                {
+                    "questionType": "text",
+                    "question": "Who is known as the Father of the Nation in India?",
+                    "answer": "Mahatma Gandhi"
+                },
+                {
+                    "questionType": "number",
+                    "question": "In which year did India gain independence?",
+                    "answer": 1947
+                },
+                {
+                    "questionType": "mcq",
+                    "question": "Who founded the Maurya Empire?",
+                    "options": [
+                        "Ashoka",
+                        "Chandragupta Maurya",
+                        "Akbar",
+                        "Harsha"
+                    ],
+                    "answer": "Chandragupta Maurya"
+                },
+                {
+                    "questionType": "text",
+                    "question": "Who built the Taj Mahal?",
+                    "answer": "Shah Jahan"
+                },
+                {
+                    "questionType": "number",
+                    "question": "In which year did the Indian Constitution come into effect?",
+                    "answer": 1950
+                },
+                {
+                    "questionType": "mcq",
+                    "question": "Who was the queen of Jhansi during the Indian Rebellion of 1857?",
+                    "options": [
+                        "Rani Lakshmibai",
+                        "Razia Sultan",
+                        "Nur Jahan",
+                        "Ahilyabai Holkar"
+                    ],
+                    "answer": "Rani Lakshmibai"
+                },
+                {
+                    "questionType": "text",
+                    "question": "Who was the founder of the Mughal Empire in India?",
+                    "answer": "Babur"
+                },
+                {
+                    "questionType": "number",
+                    "question": "In which year did the Dandi March take place?",
+                    "answer": 1930
+                },
+                {
+                    "questionType": "mcq",
+                    "question": "Who gave the slogan 'Give me blood, and I will give you freedom'?",
+                    "options": [
+                        "Bhagat Singh",
+                        "Subhash Chandra Bose",
+                        "Mahatma Gandhi",
+                        "Bal Gangadhar Tilak"
+                    ],
+                    "answer": "Subhash Chandra Bose"
+                }
+            ]
+        }
+    ]
+}
