@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #191919;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 74%;
+    margin: 65px auto;
+}
+
+/* Heading */
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* Controls */
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+#searchInput {
+    flex: 1;
+    height: 35px;
+    padding: 0 13px;
+
+    background: #191919;
+    color: white;
+
+    border: 1px solid #777;
+    outline: none;
+
+    font-size: 12px;
+}
+
+#searchInput::placeholder {
+    color: #ddd;
+}
+
+#searchInput:focus {
+    border-color: #aaa;
+}
+
+button {
+    height: 35px;
+    padding: 0 12px;
+
+    background: #191919;
+    color: #fff;
+
+    border: 1px solid #777;
+
+    cursor: pointer;
+    font-size: 12px;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #303030;
+    border-color: #aaa;
+}
+
+/* Loading */
+
+#loading {
+    text-align: center;
+    color: #aaa;
+    padding: 20px;
+}
+
+#error {
+    text-align: center;
+    color: #ff4444;
+    margin-bottom: 15px;
+}
+
+/* Table */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    display: none;
+}
+
+tbody tr {
+    height: 58px;
+    border-bottom: 1px solid #777;
+}
+
+tbody tr:first-child {
+    border-top: none;
+}
+
+td {
+    padding: 10px 8px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+/* Coin */
+
+.coin-info {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    min-width: 130px;
+}
+
+.coin-info img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.coin-name {
+    color: #f1f1f1;
+}
+
+/* Symbol */
+
+.symbol {
+    color: #e5e5e5;
+    text-transform: uppercase;
+}
+
+/* Price */
+
+.price {
+    text-align: right;
+}
+
+/* Volume */
+
+.volume {
+    text-align: right;
+}
+
+/* Percentage */
+
+.change {
+    text-align: right;
+}
+
+.positive {
+    color: #55c935;
+}
+
+.negative {
+    color: #ff3b30;
+}
+
+/* Market Cap */
+
+.market-cap {
+    text-align: right;
+    min-width: 180px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 900px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .controls {
+        flex-wrap: wrap;
+    }
+
+    #searchInput {
+        width: 100%;
+        flex: none;
+    }
+
+    button {
+        flex: 1;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        width: 95%;
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    td {
+        font-size: 12px;
+    }
+
+    .coin-info {
+        min-width: 120px;
+    }
+
+}
