@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Restaurant - Food Menu</title>
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         HEADER
+    =================================================== -->
+
+    <header class="header">
+
+        <!-- Restaurant Logo -->
+        <div class="logo">
+
+            <span class="logo-icon">
+                🍴
+            </span>
+
+            <span class="logo-text">
+                LOCO<br>
+                <small>HERE</small>
+            </span>
+
+        </div>
+
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <span class="search-icon">
+                🔍
+            </span>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search food item"
+            >
+
+        </div>
+
+
+        <!-- Header Buttons -->
+        <div class="header-buttons">
+
+            <button
+                class="signup"
+                type="button"
+            >
+                Sign Up
+            </button>
+
+
+            <button
+                class="login"
+                type="button"
+            >
+                Login
+            </button>
+
+
+            <div class="cart">
+
+                🛒
+
+                <span id="cartCount">
+                    0
+                </span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==================================================
+         MAIN CONTENT
+    =================================================== -->
+
+    <main>
+
+
+        <!-- ==================================================
+             LEFT SIDEBAR
+        =================================================== -->
+
+        <aside class="sidebar">
+
+
+            <!-- Restaurant Profile -->
+
+            <div class="restaurant-logo">
+
+                <img
+                    src="images/chef.png"
+                    alt="Restaurant Chef"
+                    class="chef-image"
+                >
+
+
+                <h3>
+                    Your Restaurant Menu
+                </h3>
+
+
+                <p>
+                    Your Slogan
+                </p>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 QUICK LINKS
+            =================================================== -->
+
+            <div class="sidebar-section">
+
+                <h4>
+                    Quick Links
+                </h4>
+
+
+                <ol>
+
+                    <li>
+                        <a href="#home">
+                            Home
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#orders">
+                            Your Orders
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#wallet">
+                            Wallet
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#profile">
+                            Profile
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#logout">
+                            Logout
+                        </a>
+                    </li>
+
+                </ol>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 MORE ABOUT US
+            =================================================== -->
+
+            <div class="sidebar-section">
+
+                <h4>
+                    More About Us
+                </h4>
+
+
+                <ol>
+
+                    <li>
+                        <a href="#">
+                            Our Blog
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            Upcoming Dishes
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            Our Story
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            Social Media Links
+                        </a>
+                    </li>
+
+                </ol>
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- ==================================================
+             RIGHT CONTENT
+        =================================================== -->
+
+        <section
+            class="content"
+            id="home"
+        >
+
+
+            <!-- ==================================================
+                 RESTAURANT BANNER
+            =================================================== -->
+
+            <div class="hero">
+
+                <img
+                    src="images/restaurant-banner.png"
+                    alt="Delicious Food Menu"
+                    class="hero-banner"
+                >
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 MENU HEADER
+            =================================================== -->
+
+            <div class="menu-header">
+
+
+                <div>
+
+                    <p class="small-title">
+                        MENU
+                    </p>
+
+
+                    <h2>
+                        Delicious Food
+                    </h2>
+
+                </div>
+
+
+                <!-- Take Order Button -->
+
+                <button
+                    id="orderBtn"
+                    class="order-btn"
+                    type="button"
+                >
+                    🛒 Take Order
+                </button>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 MENU GRID
+            =================================================== -->
+
+            <div
+                class="menu-grid"
+                id="menuContainer"
+            >
+
+                <!--
+                    Food items will be inserted here
+                    dynamically using JavaScript.
+                -->
+
+                <div class="loading">
+
+                    Loading menu...
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ==================================================
+         ORDER STATUS MODAL
+    =================================================== -->
+
+    <div
+        class="status-modal"
+        id="statusModal"
+    >
+
+
+        <div class="status-card">
+
+
+            <!-- Status Icon -->
+
+            <div
+                class="status-icon"
+                id="statusIcon"
+            >
+                🍽️
+            </div>
+
+
+            <!-- Status Title -->
+
+            <h2 id="statusTitle">
+                Ready to Order
+            </h2>
+
+
+            <!-- Status Message -->
+
+            <p id="statusMessage">
+                Choose your delicious food.
+            </p>
+
+
+            <!-- Order Summary -->
+
+            <div
+                class="order-summary"
+                id="orderSummary"
+            >
+
+            </div>
+
+
+            <!-- Close Button -->
+
+            <button
+                class="close-btn"
+                id="closeStatus"
+                type="button"
+            >
+                Close
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+
+            <h3>
+                🍽️ FOOD HOUSE
+            </h3>
+
+
+            <p>
+                Delicious food. Happy customers.
+            </p>
+
+
+            <p>
+                © 2026 Food House.
+                All Rights Reserved.
+            </p>
+
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ==================================================
+         JAVASCRIPT
+    =================================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
