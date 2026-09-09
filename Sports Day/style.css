@@ -1,0 +1,559 @@
+/* ==========================================
+   GLOBAL
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.header {
+    height: 75px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: #172033;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff4d00;
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero {
+    min-height: 600px;
+
+    padding: 80px 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background:
+        radial-gradient(circle at 80% 20%, #ffcf70, transparent 30%),
+        linear-gradient(135deg, #fff1d6, #ffffff);
+
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tag {
+    display: inline-block;
+
+    padding: 9px 18px;
+
+    border-radius: 30px;
+
+    background: #172033;
+    color: white;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(60px, 9vw, 120px);
+    line-height: 0.85;
+    font-weight: 1000;
+
+    letter-spacing: -7px;
+
+    color: #172033;
+}
+
+.hero h1 span {
+    display: block;
+
+    color: #ff4d00;
+
+    font-size: 0.55em;
+
+    letter-spacing: -2px;
+
+    margin-top: 18px;
+}
+
+.description {
+    margin-top: 30px;
+
+    max-width: 570px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #626b7d;
+}
+
+.start-btn {
+    margin-top: 35px;
+
+    border: none;
+
+    padding: 17px 35px;
+
+    border-radius: 12px;
+
+    background: #ff4d00;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 25px rgba(255, 77, 0, 0.3);
+
+    transition: 0.3s;
+}
+
+.start-btn:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 35px rgba(255, 77, 0, 0.4);
+}
+
+.start-btn:active {
+    transform: scale(0.96);
+}
+
+
+/* ==========================================
+   TROPHY
+========================================== */
+
+.hero-trophy {
+    width: 320px;
+    height: 320px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.8);
+
+    font-size: 170px;
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.15);
+
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+/* ==========================================
+   SECTION
+========================================== */
+
+.events,
+.score-section {
+    padding: 100px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-heading p {
+    color: #ff4d00;
+
+    font-size: 13px;
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-size: 45px;
+}
+
+
+/* ==========================================
+   EVENT CARDS
+========================================== */
+
+.event-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+.event-card {
+    padding: 40px 30px;
+
+    background: white;
+
+    border-radius: 22px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+}
+
+.event-icon {
+    font-size: 55px;
+
+    margin-bottom: 20px;
+}
+
+.event-card h3 {
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    color: #788092;
+
+    margin-bottom: 20px;
+}
+
+.event-card span {
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    background: #fff0e9;
+
+    color: #ff4d00;
+
+    border-radius: 20px;
+
+    font-weight: 800;
+}
+
+
+/* ==========================================
+   SCORE SECTION
+========================================== */
+
+.score-section {
+    background: #172033;
+    color: white;
+}
+
+.score-board {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.team-card {
+    padding: 35px 20px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    background: #222d43;
+
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+}
+
+.team-circle {
+    width: 70px;
+    height: 70px;
+
+    margin: auto auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: white;
+
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.team-card h3 {
+    font-size: 18px;
+
+    letter-spacing: 2px;
+}
+
+.score {
+    font-size: 55px;
+
+    font-weight: 900;
+
+    margin-top: 15px;
+}
+
+.team-card p {
+    color: #9da7b9;
+}
+
+
+/* Team colors */
+
+.red {
+    border-top: 5px solid #ff3b30;
+}
+
+.red .team-circle {
+    color: #ff3b30;
+}
+
+.blue {
+    border-top: 5px solid #2589ff;
+}
+
+.blue .team-circle {
+    color: #2589ff;
+}
+
+.green {
+    border-top: 5px solid #25b864;
+}
+
+.green .team-circle {
+    color: #25b864;
+}
+
+.yellow {
+    border-top: 5px solid #ffc107;
+}
+
+.yellow .team-circle {
+    color: #d69f00;
+}
+
+
+/* ==========================================
+   STATUS
+========================================== */
+
+.status-section {
+    padding: 70px 8%;
+
+    background: white;
+}
+
+.status-box {
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    border-radius: 18px;
+
+    background: #f5f7fb;
+}
+
+.status-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #fff0e9;
+
+    font-size: 30px;
+}
+
+.status-box p {
+    color: #ff4d00;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 7px;
+}
+
+.status-box h3 {
+    font-size: 22px;
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+    padding: 35px;
+
+    background: #0f1625;
+
+    color: #9da7b9;
+
+    text-align: center;
+
+    line-height: 2;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .hero {
+        text-align: center;
+
+        flex-direction: column;
+
+        gap: 60px;
+    }
+
+    .hero-content {
+        max-width: 800px;
+    }
+
+    .hero-trophy {
+        width: 230px;
+        height: 230px;
+
+        font-size: 110px;
+    }
+
+    .event-container {
+        grid-template-columns: 1fr;
+    }
+
+    .score-board {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 70px 6%;
+    }
+
+    .hero h1 {
+        font-size: 65px;
+    }
+
+    .events,
+    .score-section {
+        padding: 70px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 35px;
+    }
+
+    .score-board {
+        grid-template-columns: 1fr;
+    }
+}
