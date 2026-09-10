@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #222;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#fetchBtn {
+    border: none;
+    background: white;
+    color: #5a4fcf;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#fetchBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+#fetchBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#status {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+/* API Sections */
+
+.api-section {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    margin-bottom: 30px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.api-section h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+
+/* Table */
+
+.table-container {
+    overflow-x: auto;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+}
+
+th {
+    background: #5a4fcf;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+td {
+    padding: 13px;
+    border-bottom: 1px solid #ddd;
+    line-height: 1.5;
+}
+
+tbody tr:hover {
+    background: #f5f3ff;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+
+/* Status */
+
+.loading {
+    color: #ff9800;
+}
+
+.success {
+    color: #00c853;
+}
+
+.error {
+    color: #ff1744;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .api-section {
+        padding: 15px;
+    }
+
+    table {
+        min-width: 650px;
+    }
+}
