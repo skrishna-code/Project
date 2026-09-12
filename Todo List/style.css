@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #202020;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    padding: 22px 40px;
+}
+
+/* Page heading */
+.page-title {
+    color: #777;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* Main container */
+.container {
+    background-color: white;
+    min-height: 585px;
+    padding: 10px 15px 40px;
+    max-width: 776px;
+    margin: 0 auto;
+}
+
+/* Main title */
+.container h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0 0 11px;
+    color: #111;
+}
+
+/* Input section */
+.input-section {
+    display: grid;
+    grid-template-columns: 1.55fr 0.9fr 0.95fr 0.65fr;
+    gap: 7px;
+    margin: 0 0 22px;
+}
+
+/* Inputs and select */
+.input-section input,
+.input-section select {
+    height: 30px;
+    border: 1px solid #555;
+    padding: 0 9px;
+    font-size: 12px;
+    outline: none;
+    background-color: white;
+}
+
+/* First input active-style border */
+#todoName:focus {
+    border: 2px solid #168bf5;
+}
+
+/* Date input */
+#todoDate {
+    cursor: pointer;
+}
+
+/* Select */
+#todoPriority {
+    cursor: pointer;
+}
+
+/* Add button */
+#addBtn {
+    height: 29px;
+    border: none;
+    background-color: #050505;
+    color: white;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+#addBtn:hover {
+    background-color: #222;
+}
+
+/* Section */
+section {
+    margin-bottom: 15px;
+}
+
+/* Section heading */
+section h3 {
+    font-size: 15px;
+    margin: 0 0 15px;
+    color: #111;
+}
+
+/* Todo row */
+.todo-item {
+    min-height: 36px;
+    border: 1px solid #111;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1.7fr 1fr 1.1fr 60px;
+    align-items: center;
+    padding: 0 9px;
+    margin-bottom: 13px;
+    font-size: 11px;
+}
+
+/* Incomplete todos */
+.todo-item.incomplete {
+    background-color: #000;
+    color: white;
+}
+
+/* Completed todos */
+.todo-item.completed {
+    background-color: white;
+    color: #222;
+}
+
+/* Todo name */
+.todo-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Date */
+.todo-date {
+    text-align: left;
+}
+
+/* Priority */
+.todo-priority {
+    text-align: left;
+}
+
+/* Buttons container */
+.todo-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Action buttons */
+.action-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    line-height: 1;
+}
+
+/* Tick button */
+.complete-btn {
+    color: white;
+}
+
+.completed .complete-btn {
+    display: none;
+}
+
+/* Delete button */
+.delete-btn {
+    color: inherit;
+}
+
+/* Hover */
+.action-btn:hover {
+    transform: scale(1.15);
+}
+
+/* Empty message */
+.empty-message {
+    font-size: 12px;
+    color: #777;
+    padding: 3px 0 8px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .input-section {
+        grid-template-columns: 1fr;
+    }
+
+    .input-section input,
+    .input-section select,
+    #addBtn {
+        width: 100%;
+        height: 38px;
+    }
+
+    .todo-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .todo-date,
+    .todo-priority {
+        text-align: left;
+    }
+
+    .todo-actions {
+        justify-content: flex-start;
+    }
+
+}
