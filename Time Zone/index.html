@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TimeZone API</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- <div class="page-title">
+        Test for F3
+    </div> -->
+
+    <div class="container">
+
+        <!-- =========================
+             CURRENT TIMEZONE SECTION
+        ========================== -->
+
+        <div class="top-section">
+
+            <h1>TimeZone API</h1>
+
+            <h2>Your Current Time Zone</h2>
+
+            <div class="timezone-card">
+
+                <div class="timezone-row">
+                    <span>Name Of Time Zone :</span>
+                    <span id="currentTimezone">Loading...</span>
+                </div>
+
+                <div class="two-column">
+
+                    <div>
+                        <span>Lat:</span>
+                        <span id="currentLat"></span>
+                    </div>
+
+                    <div>
+                        <span>Long:</span>
+                        <span id="currentLong"></span>
+                    </div>
+
+                </div>
+
+                <div class="timezone-row">
+                    <span>Offset STD:</span>
+                    <span id="currentOffsetSTD"></span>
+                </div>
+
+                <div class="timezone-row">
+                    <span>Offset STD Seconds :</span>
+                    <span id="currentOffsetSTDSeconds"></span>
+                </div>
+
+                <div class="timezone-row">
+                    <span>Offset DST :</span>
+                    <span id="currentOffsetDST"></span>
+                </div>
+
+                <div class="timezone-row">
+                    <span>Offset DST Seconds:</span>
+                    <span id="currentOffsetDSTSeconds"></span>
+                </div>
+
+                <div class="timezone-row">
+                    <span>Country:</span>
+                    <span id="currentCountry"></span>
+                </div>
+
+                <div class="timezone-row">
+                    <span>Postcode:</span>
+                    <span id="currentPostcode"></span>
+                </div>
+
+                <div class="timezone-row">
+                    <span>City:</span>
+                    <span id="currentCity"></span>
+                </div>
+
+            </div>
+
+            <p id="locationError" class="error"></p>
+
+        </div>
+
+
+        <!-- =========================
+             ADDRESS SECTION
+        ========================== -->
+
+        <div class="bottom-section">
+
+            <h2>Enter Address</h2>
+
+            <input
+                type="text"
+                id="addressInput"
+                placeholder="Address"
+            >
+
+            <button id="submitBtn">
+                Submit
+            </button>
+
+            <p id="addressError" class="error"></p>
+
+
+            <!-- =========================
+                 SEARCH RESULT
+            ========================== -->
+
+            <div id="resultSection" class="result-section">
+
+                <h2>Your result</h2>
+
+                <div class="result-card">
+
+                    <div class="timezone-row">
+                        <span>Name Of Time Zone :</span>
+                        <span id="resultTimezone"></span>
+                    </div>
+
+                    <div class="two-column">
+
+                        <div>
+                            <span>Lat:</span>
+                            <span id="resultLat"></span>
+                        </div>
+
+                        <div>
+                            <span>Long:</span>
+                            <span id="resultLong"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="timezone-row">
+                        <span>Offset STD:</span>
+                        <span id="resultOffsetSTD"></span>
+                    </div>
+
+                    <div class="timezone-row">
+                        <span>Offset STD Seconds :</span>
+                        <span id="resultOffsetSTDSeconds"></span>
+                    </div>
+
+                    <div class="timezone-row">
+                        <span>Offset DST :</span>
+                        <span id="resultOffsetDST"></span>
+                    </div>
+
+                    <div class="timezone-row">
+                        <span>Offset DST Seconds:</span>
+                        <span id="resultOffsetDSTSeconds"></span>
+                    </div>
+
+                    <div class="timezone-row">
+                        <span>Country:</span>
+                        <span id="resultCountry"></span>
+                    </div>
+
+                    <div class="timezone-row">
+                        <span>Postcode:</span>
+                        <span id="resultPostcode"></span>
+                    </div>
+
+                    <div class="timezone-row">
+                        <span>City:</span>
+                        <span id="resultCity"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

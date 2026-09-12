@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #202020;
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* =================================
+   PAGE TITLE + CONTAINER
+================================= */
+
+.container {
+    width: 313px;
+    background-color: #000;
+}
+
+
+/* =================================
+   PAGE TITLE
+================================= */
+
+.page-title {
+    position: absolute;
+
+    top: 30px;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* =================================
+   CURRENT TIMEZONE SECTION
+================================= */
+
+.top-section {
+    background-color: #fff;
+
+    padding: 17px 13px 12px;
+
+    min-height: 303px;
+}
+
+.top-section h1 {
+    color: #111;
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+.top-section h2 {
+    color: #111;
+
+    font-size: 18px;
+
+    margin-bottom: 14px;
+}
+
+
+/* =================================
+   CURRENT TIMEZONE CARD
+================================= */
+
+.timezone-card {
+    border: 1px solid #aaa;
+
+    background-color: #fff;
+
+    padding: 9px;
+
+    min-height: 204px;
+
+    font-size: 10px;
+
+    color: #222;
+}
+
+.timezone-row {
+    display: flex;
+
+    gap: 3px;
+
+    margin-bottom: 8px;
+
+    line-height: 1.1;
+}
+
+.two-column {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    margin-bottom: 8px;
+}
+
+.two-column > div {
+    display: flex;
+
+    gap: 3px;
+}
+
+
+/* =================================
+   ADDRESS SECTION
+================================= */
+
+.bottom-section {
+    background-color: #000;
+
+    color: #fff;
+
+    padding: 25px 13px 30px;
+
+    min-height: 400px;
+}
+
+.bottom-section h2 {
+    color: #fff;
+
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =================================
+   ADDRESS INPUT
+================================= */
+
+#addressInput {
+    width: 100%;
+
+    height: 14px;
+
+    background-color: #050505;
+
+    color: #fff;
+
+    border: 1px solid #333;
+
+    outline: none;
+
+    padding: 2px 5px;
+
+    font-size: 7px;
+}
+
+#addressInput::placeholder {
+    color: #777;
+}
+
+#addressInput:focus {
+    border-color: #777;
+}
+
+
+/* =================================
+   SUBMIT BUTTON
+================================= */
+
+#submitBtn {
+    display: block;
+
+    width: 48px;
+
+    height: 11px;
+
+    margin-top: 8px;
+
+    background-color: #fff;
+
+    color: #111;
+
+    border: none;
+
+    font-size: 6px;
+
+    cursor: pointer;
+}
+
+#submitBtn:hover {
+    background-color: #ddd;
+}
+
+
+/* =================================
+   ERROR MESSAGE
+================================= */
+
+.error {
+    color: red;
+
+    font-size: 6px;
+
+    margin-top: 8px;
+
+    min-height: 8px;
+}
+
+
+/* =================================
+   RESULT SECTION
+================================= */
+
+.result-section {
+    display: none;
+
+    margin-top: 21px;
+}
+
+.result-section h2 {
+    color: #fff;
+
+    font-size: 18px;
+
+    margin-bottom: 13px;
+}
+
+
+/* =================================
+   RESULT CARD
+================================= */
+
+.result-card {
+    border: 1px solid #555;
+
+    background-color: #000;
+
+    color: #fff;
+
+    padding: 11px 9px;
+
+    font-size: 10px;
+
+    min-height: 203px;
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 500px) {
+
+    body {
+        align-items: flex-start;
+
+        padding-top: 70px;
+    }
+
+    .container {
+        width: 313px;
+    }
+
+    .page-title {
+        top: 25px;
+    }
+}
