@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Post Office Application</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- =====================================
+             BEFORE CLICK / IP SECTION
+        ====================================== -->
+
+        <div class="ip-section">
+
+            <div class="ip-content">
+
+                <p class="ip-title">
+                    Post Office Application
+                </p>
+
+                <p class="ip-description">
+                    This application allows you to fetch user information about
+                    the nearest Post Offices. You can get your current IP address
+                    and location.
+                </p>
+
+            </div>
+
+
+            <div class="ip-action">
+
+                <p>
+                    Your Current IP Address is
+                    <span id="ipAddress">Loading...</span>
+                </p>
+
+                <button id="getInfoBtn">
+                    Get Started
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             LOADING
+        ====================================== -->
+
+        <p id="loading" class="loading">
+            Loading...
+        </p>
+
+
+        <!-- =====================================
+             ERROR
+        ====================================== -->
+
+        <p id="errorMessage" class="error"></p>
+
+
+        <!-- =====================================
+             AFTER CLICK - USER INFORMATION
+        ====================================== -->
+
+        <div id="userInfo" class="user-info">
+
+            <div class="info-box">
+                <span>IP Address:</span>
+                <strong id="infoIP">-</strong>
+            </div>
+
+            <div class="info-box">
+                <span>City:</span>
+                <strong id="infoCity">-</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Organisation:</span>
+                <strong id="infoOrganisation">-</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Lat:</span>
+                <strong id="infoLatitude">-</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Region:</span>
+                <strong id="infoRegion">-</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Hostname:</span>
+                <strong id="infoHostname">-</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Long:</span>
+                <strong id="infoLongitude">-</strong>
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             CURRENT LOCATION
+        ====================================== -->
+
+        <div id="locationSection" class="location-section">
+
+            <div class="location-title">
+                Your Current Location
+            </div>
+
+
+            <div class="map-container">
+
+                <iframe
+                    id="map"
+                    src=""
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             MORE INFORMATION ABOUT YOU
+        ====================================== -->
+
+        <div class="more-info">
+
+            <h2>
+                More Information About You
+            </h2>
+
+            <div class="details">
+
+                <p>
+                    <span>Time Zone:</span>
+                    <strong id="infoTimezone">-</strong>
+                </p>
+
+                <p>
+                    <span>Date And Time:</span>
+                    <strong id="currentDate">-</strong>
+                </p>
+
+                <p>
+                    <span>Pincode:</span>
+                    <strong id="infoPostal">-</strong>
+                </p>
+
+                <p>
+                    <span>Message:</span>
+                    <strong id="infoMessage">
+                        Number of pincode found
+                    </strong>
+                </p>
+
+            </div>
+
+            <div class="clock">
+                <span id="currentTime"></span>
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             POST OFFICES
+        ====================================== -->
+
+        <div
+            id="postOfficeSection"
+            class="post-office-section"
+        >
+
+            <h2>
+                Post Offices Near You
+            </h2>
+
+
+            <!-- Search -->
+
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search By Name"
+                >
+
+            </div>
+
+
+            <!-- Post office cards -->
+
+            <div id="postOfficeList">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
