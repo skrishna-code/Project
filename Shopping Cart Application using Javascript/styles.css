@@ -1,0 +1,236 @@
+/* Write styles here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1e1e1e;
+}
+
+/* Navbar */
+.navbar {
+    height: 48px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+.logo {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+/* Main Homepage */
+.home-container {
+    min-height: calc(100vh - 48px);
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 32px 40px 32px;
+}
+
+/* Left Section */
+.home-content {
+    align-self: flex-start;
+    padding-top: 0;
+}
+
+.home-content h1 {
+    font-size: 42px;
+    font-weight: 400;
+    color: #111;
+    margin-bottom: 12px;
+}
+
+.home-content p {
+    font-size: 16px;
+    color: #111;
+    margin-bottom: 18px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 14px;
+}
+
+.buttons a {
+    width: 105px;
+    height: 31px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Login Button */
+.login-btn {
+    background-color: #000;
+    color: white;
+    border: 2px solid #008cff;
+}
+
+/* Signup Button */
+.signup-btn {
+    background-color: white;
+    color: #111;
+    border: 1px solid #333;
+}
+
+/* Image */
+.home-image {
+    width: 52%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .home-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 20px;
+    }
+
+    .home-content {
+        width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-image {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .home-image img {
+        max-width: 450px;
+    }
+}
+
+/* Login Container */
+.login-container {
+    min-height: calc(100vh - 48px);
+    background-color: white;
+    padding: 34px 28px;
+}
+
+.login-container h2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 19px;
+}
+
+/* Login Form */
+#loginForm {
+    width: 100%;
+}
+
+#loginForm input {
+    display: block;
+
+    width: 100%;
+    height: 37px;
+
+    border: 1px solid #999999;
+
+    padding: 0 14px;
+
+    margin-bottom: 14px;
+
+    font-size: 13px;
+
+    outline: none;
+}
+
+#loginForm input:focus {
+    border-color: #555555;
+}
+
+#loginForm input::placeholder {
+    color: #222222;
+    opacity: 1;
+}
+
+/* Login Button */
+#login {
+    width: 105px;
+    height: 29px;
+
+    background-color: #000000;
+    color: white;
+
+    border: 1px solid #555555;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+#login:hover {
+    background-color: #222222;
+}
+
+/* Messages */
+#loginForm #error {
+    color: red;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+#loginForm #success {
+    color: green;
+    font-size: 13px;
+    margin-top: 10px;
+}

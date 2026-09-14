@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MeShop. - Profile</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="logo">
+            Shopping Cart
+        </div>
+    </nav>
+
+    <!-- Profile -->
+    <main class="profile-container">
+
+        <section class="profile-section">
+
+            <h1>My Profile</h1>
+
+            <input
+                type="text"
+                id="fname"
+                placeholder="First Name"
+            >
+
+            <input
+                type="text"
+                id="lname"
+                placeholder="Last Name"
+            >
+
+            <button id="saveInfo">
+                Save Info
+            </button>
+
+            <p id="profileError"></p>
+            <p id="profileSuccess"></p>
+
+        </section>
+
+        <!-- Change Password -->
+        <section class="password-section">
+
+            <h1>Edit Password</h1>
+
+            <input
+                type="password"
+                id="oldPassword"
+                placeholder="Old Password"
+            >
+
+            <input
+                type="password"
+                id="newPassword"
+                placeholder="New Password"
+            >
+
+            <input
+                type="password"
+                id="confirmNewPassword"
+                placeholder="Confirm New Password"
+            >
+
+            <button id="changePassword">
+                Change Password
+            </button>
+
+            <p id="passwordError"></p>
+            <p id="passwordSuccess"></p>
+
+        </section>
+
+        <button id="logout">
+            Logout
+        </button>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

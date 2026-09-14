@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MeShop. - Shop</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav>
+
+        <div class="brand">
+            <a href="../index.html">MeShop.</a>
+        </div>
+
+        <div class="nav-items">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="../login.html">
+                Login
+            </a>
+
+            <a href="../signup.html">
+                Signup
+            </a>
+
+            <a href="../cart/index.html" class="cart-link">
+                My Cart
+                <span id="cartCount" class="cart-count">0</span>
+            </a>
+
+            <!-- PROFILE -->
+            <a href="../profile/index.html">
+                Profile
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         MAIN SHOP
+    ========================== -->
+
+    <main>
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
+        <aside>
+
+            <!-- Colors -->
+
+            <div class="filter-section">
+
+                <h2>Colors</h2>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="color"
+                        value="red"
+                    >
+                    Red
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="color"
+                        value="blue"
+                    >
+                    Blue
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="color"
+                        value="green"
+                    >
+                    Green
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="color"
+                        value="black"
+                    >
+                    Black
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="color"
+                        value="white"
+                    >
+                    White
+                </label>
+
+            </div>
+
+
+            <!-- Sizes -->
+
+            <div class="filter-section">
+
+                <h2>Sizes</h2>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="size"
+                        value="S"
+                    >
+                    S
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="size"
+                        value="M"
+                    >
+                    M
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="size"
+                        value="L"
+                    >
+                    L
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="size"
+                        value="XL"
+                    >
+                    XL
+                </label>
+
+            </div>
+
+
+            <!-- Rating -->
+
+            <div class="filter-section">
+
+                <h2>Rating</h2>
+
+                <input
+                    type="range"
+                    id="rating"
+                    min="0"
+                    max="5"
+                    value="0"
+                    step="1"
+                >
+
+                <div class="range-values">
+
+                    <span>0</span>
+
+                    <span id="ratingValue">
+                        5
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Price -->
+
+            <div class="filter-section">
+
+                <h2>Price Range</h2>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="price"
+                        value="0-50"
+                    >
+                    $0 - $50
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="price"
+                        value="50-100"
+                    >
+                    $50 - $100
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="price"
+                        value="100-1000"
+                    >
+                    $100+
+                </label>
+
+                <button id="applyFilter">
+                    Apply Filter
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =========================
+             PRODUCTS
+        ========================== -->
+
+        <section class="main-content">
+
+            <!-- Search -->
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search"
+            >
+
+
+            <!-- Categories -->
+
+            <div class="categories">
+
+                <button
+                    class="category active"
+                    data-category="all"
+                >
+                    All
+                </button>
+
+                <button
+                    class="category"
+                    data-category="men's clothing"
+                >
+                    Mens
+                </button>
+
+                <button
+                    class="category"
+                    data-category="women's clothing"
+                >
+                    Womens
+                </button>
+
+                <button
+                    class="category"
+                    data-category="jewelery"
+                >
+                    Jewellery
+                </button>
+
+                <button
+                    class="category"
+                    data-category="electronics"
+                >
+                    Electronics
+                </button>
+
+            </div>
+
+
+            <!-- Sort -->
+
+            <div class="sort-box">
+
+                <label for="sort">
+                    Sort:
+                </label>
+
+                <select id="sort">
+
+                    <option value="default">
+                        Default
+                    </option>
+
+                    <option value="low">
+                        Price: Low to High
+                    </option>
+
+                    <option value="high">
+                        Price: High to Low
+                    </option>
+
+                    <option value="rating">
+                        Rating
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Men's Clothing -->
+
+            <section class="product-section">
+
+                <h1>
+                    Men's Clothing
+                </h1>
+
+                <div
+                    id="mensProducts"
+                    class="items"
+                ></div>
+
+            </section>
+
+
+            <!-- Women's Clothing -->
+
+            <section class="product-section">
+
+                <h1>
+                    Women's Clothing
+                </h1>
+
+                <div
+                    id="womensProducts"
+                    class="items"
+                ></div>
+
+            </section>
+
+
+            <!-- Jewellery -->
+
+            <section class="product-section">
+
+                <h1>
+                    Jewellery
+                </h1>
+
+                <div
+                    id="jewelleryProducts"
+                    class="items"
+                ></div>
+
+            </section>
+
+
+            <!-- Electronics -->
+
+            <section class="product-section">
+
+                <h1>
+                    Electronics
+                </h1>
+
+                <div
+                    id="electronicsProducts"
+                    class="items"
+                ></div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MeShop. - My Cart</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+
+        <div class="brand">
+            <a href="../index.html">MeShop.</a>
+        </div>
+
+        <div class="nav-items">
+            <a href="../index.html">Home</a>
+            <a href="../login.html">Login</a>
+            <a href="../signup.html">Signup</a>
+            <a href="index.html" class="cart-link">
+                My Cart
+                <span id="cartCount" class="cart-count">0</span>
+            </a>
+            <a href="../profile/index.html">Profile</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Main -->
+    <main>
+
+        <h1>My Cart</h1>
+
+        <div class="cart-layout">
+
+            <!-- Cart Products -->
+            <div class="cart-products">
+
+                <div id="cartItems" class="cart-container"></div>
+
+            </div>
+
+
+            <!-- Checkout -->
+            <div class="checkout-card">
+
+                <h2>Checkout List</h2>
+
+                <div id="checkoutList"></div>
+
+                <div class="total">
+
+                    <strong>Total</strong>
+
+                    <span>
+                        $<span id="total">0.00</span>
+                    </span>
+
+                </div>
+
+                <button id="checkoutBtn">
+                    Click To Checkout
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Razorpay -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
