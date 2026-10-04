@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: #111;
+}
+
+.app {
+  width: 90%;
+  max-width: 1000px;
+  margin: 35px auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.filter-container {
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.filter-container h2 {
+  margin: 0 0 15px 0;
+  font-size: 24px;
+}
+
+.genre-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.genre-buttons button {
+  border: none;
+  background-color: #ddd;
+  padding: 10px 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.genre-buttons button:hover {
+  background-color: #ccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+th {
+  background-color: #f1f1f1;
+  text-align: left;
+  font-weight: bold;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px 10px;
+}
+
+tbody tr:hover {
+  background-color: #f8f8f8;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 65%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 25%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 10%;
+}
